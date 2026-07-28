@@ -1,0 +1,138 @@
+/*=====================================================
+RESPONSIVE NAVIGATION
+Version 1
+=====================================================*/
+
+/* Hide hamburger on desktop */
+
+.menu-toggle{
+
+    display:none;
+
+}
+
+
+/* Mobile & Tablet */
+
+@media (max-width:992px){
+
+    /* keep desktop logo */
+
+    .navbar{
+
+        position:relative;
+
+        justify-content:space-between;
+
+        align-items:center;
+
+        flex-wrap:nowrap;
+
+    }
+
+    .logo{
+
+        width:auto;
+
+    }
+
+    /* Hide desktop menu */
+
+    .menu{
+
+        display:none;
+
+    }
+
+    /* Hide CTA button */
+
+    .quote-button{
+
+        display:none;
+
+    }
+
+    /* Show hamburger */
+
+    .menu-toggle{
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        align-items:center;
+
+        gap:6px;
+
+        width:48px;
+
+        height:48px;
+
+        background:none;
+
+        border:none;
+
+        cursor:pointer;
+
+        padding:0;
+
+    }
+
+    .menu-toggle span{
+
+        width:28px;
+
+        height:3px;
+
+        border-radius:5px;
+
+        background:#0B4F6C;
+
+        transition:.3s;
+
+    }
+
+}
+
+/* Mobile dropdown menu */
+
+.menu.mobile-open{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+
+    position:absolute;
+
+    top:100%;
+    left:0;
+
+    width:100%;
+
+    background:#ffffff;
+
+    padding:25px 0;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    z-index:999;
+
+}
+
+.menu.mobile-open li{
+
+    width:100%;
+    text-align:center;
+
+}
+
+.menu.mobile-open a{
+
+    display:block;
+
+    padding:10px 0;
+
+}

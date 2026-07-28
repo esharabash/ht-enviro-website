@@ -132,6 +132,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+    /*=========================================
+  Mobile Navigation
+=========================================*/
+
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+
+    menuToggle.addEventListener("click", function () {
+
+        menu.classList.toggle("mobile-open");
+        menuToggle.classList.toggle("active");
+
+    });
+
+}
+
 
     /*=========================================
       Back To Top Button
