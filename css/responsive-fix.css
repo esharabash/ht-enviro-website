@@ -14,18 +14,34 @@ header{
 
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    height:90px;
+
+    justify-content:flex-start;
+
     position:relative;
+
+    height:90px;
+
 }
 
 .logo{
 
     display:flex;
+
     align-items:center;
-    gap:12px;
 
     flex-direction:row;
+
+    gap:12px;
+
+    flex:1;
+
+}
+
+
+.menu-toggle{
+
+    margin-left:auto;
+
 }
 
 .logo img{
