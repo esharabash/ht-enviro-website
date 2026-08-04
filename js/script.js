@@ -132,19 +132,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    /*=========================================
-  Mobile Navigation
-=========================================*/
-
 const menuToggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 
-if (menuToggle && menu) {
+console.log(menuToggle);
+console.log(menu);
 
-    menuToggle.addEventListener("click", function () {
+if (menuToggle && menu){
 
-        menu.classList.toggle("mobile-open");
-        menuToggle.classList.toggle("active");
+    menuToggle.addEventListener("click",function(){
+
+        console.log("CLICKED");
+
+        menu.classList.toggle("active");
 
     });
 
