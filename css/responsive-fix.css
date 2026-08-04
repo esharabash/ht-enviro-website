@@ -1,147 +1,101 @@
 /*====================================================
 HT-ENVIRO RESPONSIVE FIX
-Desktop is NEVER modified
 ====================================================*/
 
 @media screen and (max-width:991px){
 
 header{
-
     height:90px;
 }
 
-.navbar{
-
-    display:flex;
-    align-items:center;
-
-    justify-content:flex-start;
-
+header .navbar{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    justify-content:space-between !important;
+    align-items:center !important;
+    height:90px;
+    padding:0 !important;
     position:relative;
-
-    height:90px;
-
 }
 
-.logo{
-
-    display:flex;
-
-    align-items:center;
-
-    flex-direction:row;
-
-    gap:12px;
-
+header .logo{
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    width:auto !important;
     flex:1;
-
+    gap:12px;
 }
 
-
-.menu-toggle{
-
-    margin-left:auto;
-
+header .logo img{
+    width:58px;
+    height:auto;
 }
 
-.logo img{
-
-    width:60px;
-}
-
-.company-name{
-
+header .company-name{
     display:flex;
     flex-direction:column;
-    justify-content:center;
 }
 
-.company-name h2{
-
-    font-size:26px;
-    line-height:1.1;
+header .company-name h2{
+    font-size:24px;
+    line-height:1.05;
 }
 
-.company-name span{
-
+header .company-name span{
     font-size:12px;
 }
 
-.quote-button{
-
-    display:none;
+header .quote-button{
+    display:none !important;
 }
 
-.menu-toggle{
-
-    display:flex;
+header .menu-toggle{
+    display:flex !important;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
-    width:48px;
-    height:48px;
-
-    border:none;
+    margin-left:auto;
+    width:46px;
+    height:46px;
     background:none;
-
+    border:none;
     cursor:pointer;
+    z-index:10002;
+}
 
+header .menu-toggle span{
+    width:28px;
+    height:3px;
+    margin:3px 0;
+    background:#0C5A82;
+}
+
+header .menu{
+    display:none !important;
+}
+
+header .menu.active{
+    display:flex !important;
+    flex-direction:column;
+    position:absolute;
+    top:90px;
+    left:0;
+    width:100%;
+    background:#fff;
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+    padding:15px 0;
     z-index:10001;
 }
 
-.menu-toggle span{
-
-    width:30px;
-    height:3px;
-
-    margin:3px 0;
-
-    background:#0C5A82;
-
-    transition:.3s;
-}
-
-.menu{
-
-    position:absolute;
-
-    top:90px;
-    left:0;
-
-    width:100%;
-
-    background:#ffffff;
-
-    display:none;
-
-    flex-direction:column;
-
-    padding:20px;
-
-    box-shadow:0 15px 30px rgba(0,0,0,.08);
-
-    z-index:9999;
-}
-
-.menu.active{
-
-    display:flex;
-}
-
-.menu li{
-
+header .menu.active li{
     width:100%;
 }
 
-.menu a{
-
+header .menu.active a{
     display:block;
-
-    padding:14px 0;
-
-    font-size:18px;
-
+    padding:15px 25px;
     border-bottom:1px solid #ececec;
 }
 
